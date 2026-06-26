@@ -1,0 +1,37 @@
+{
+    "name": "erikgratz/sudoku",
+    "description": "Sudoku generator and solver using Exact Cover (Algorithm X + Dancing Links)",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "symfony/console": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudoku\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sudoku\\Tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/sudoku"
+    ],
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [{
+        "name": "packagist",
+        "type": "composer",
+        "url": "https://repo.packagist.org"
+    }]
+}
